@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Mikhail Nesterenko](https://up.htmlacademy.ru/htmlcss/28/user/1063683).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
