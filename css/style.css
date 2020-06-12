@@ -1,9 +1,4 @@
-
-/* body {
-  padding: 50px 80px;
-  line-height: 1.4;
-	font-family: sans-serif;
-} */
+/* Variables */
 
 .visually-hidden {
   position: absolute;
@@ -14,3 +9,385 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+:root {
+  --basic_black: #000000;
+  --basic_black-60: rgba(0, 0, 0, 0.60);
+  --basic_black-30: rgba(0, 0, 0, 0.30);
+  --basic_black-20: rgba(0, 0, 0, 0.20);
+  --basic_black-10: rgba(0, 0, 0, 0.10);
+  --basic_white: #FFFFFF;
+  --basic_white-30: rgba(255, 255, 255, 0.3);
+  
+  --basic_grey: #EEEEEE;
+  --social-media_grey: #E1E1E1;
+  --logo_grey: #A6A6A6;
+  --card_grey: #656565;
+  
+  --basic_grey-asphalt: #4D4D4D;
+  --basic_grey-asphalt-10: rgba(77, 77, 77, 0.10);
+  --basic_grey-asphalt-12: rgba(77, 77, 77, 0.12);
+  --basic_grey-asphalt-40: rgba(77, 77, 77, 0.40);
+
+  --border_default_grey: #D7DCDE;
+  --border_hover_grey: #B4B9BB;
+
+  --button_hover_grey: #DFDFDF;
+  --button_click_grey: #D5D5D5;
+  --button_active-item_grey: #DBDBDB;
+
+  --basic_orange-dawn: #FB565A;
+  --basic_orange-dawn-10: rgba(251, 86, 90, 0.10);
+  --basic_orange-dawn-30: rgba(251, 86, 90, 0.30);
+  --basic_carmine-pink: #E74246;
+  --basic_strawberry-red: #D7373B;
+
+  --button_default_jade: #00CA74;
+  --button_hover_jade: #00BC6C;
+  --button_click_jade: #00AA62;
+
+
+  --button_default_pear: #EFC84A;
+  --button_hover_pastel-yellow: #EAB534;
+  --button_click_saturated-yellow: #E5A722;
+}
+
+/* Global */
+
+body {
+  min-width: 1180px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic_black);
+  text-transform: none;
+  background-color: var(--basic_white);
+  background-image: url("");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic_black); 
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.logo a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic_orange-dawn);
+}
+
+.logo a:hover,
+.logo a:focus {
+  color: var(--basic_black);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic_black-30);
+}
+/* пока не знаю как сделать hover логотипа, не проходили */ 
+.logo a:active {
+  background-color: var(--logo_grey);
+}
+
+/*.site-navigation a:visited,
+.user-navigation a:visited {
+  background-color: var(--basic_black-30);}*/
+
+/* Services */
+
+.services {
+  list-style: none;
+  text-align: left;
+}
+
+.services h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+  font:inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic_orange-dawn);
+  color: var(--basic_white)
+  
+} 
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic_carmine-pink);
+  color: var(--basic_white)
+}
+
+.button:active {
+  background-color: var(--basic_strawberry-red);
+  color: var(--basic_white-30)
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_grey-asphalt-10);
+}
+
+.template-list  .button:active {
+background-color: var(--basic_strawberry-red);
+color: var(--basic_white)
+}
+
+.services .button-green {
+  background-color: var(--button_default_jade);
+}
+
+.services .button-green:hover,
+.services .button-green:focus {
+  background-color: var(--button_hover_jade);
+}
+
+.button-green:active {
+  background-color: var(--button_click_jade);
+  color: var(--basic_white-30)
+}
+
+.button-green.disabled,
+.button-green:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_grey-asphalt-10);
+}
+
+.services .button-yellow {
+  background-color: var(--button_default_pear);
+}
+
+.services .button-yellow:hover,
+.services .button-yellow:focus {
+  background-color: var(--button_hover_pastel-yellow);
+}
+
+.button-yellow:active {
+  background-color: var(--button_click_saturated-yellow);
+  color: var(--basic_white-30)
+}
+
+.button-yellow.disabled,
+.button-yellow:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_grey-asphalt-10);
+}
+
+.button-filter {
+  background-color: var(--basic_grey);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--button_hover_grey);
+}
+
+.button-filter:active {
+  background-color: var(--button_click_grey);
+  color: var(--basic_white-30)
+}
+
+.button-filter:visited {
+  background-color: var(--button_active-item_grey);
+  color: var(--basic_black)
+}
+
+.button-filter.disabled,
+.button-filter:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_grey-asphalt-10);
+}
+
+body h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic_black); 
+  text-align: center;
+}
+
+/* Footer */
+
+.main-footer {
+  color: var(--basic_black);
+  background-color: var(--basic_white);
+  background-image: url("");
+} 
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-social span {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* Buttons-footer */
+
+.footer-list .button-social {
+  background-color: var(--social-media_grey);
+  color: var(--basic_white)
+}
+
+.footer-list .button-social:hover,
+.footer-list .button-social:focus {
+  background-color: var(--basic_carmine-pink);
+}
+
+.button-social:active {
+  background-color: var(--basic_strawberry-red);
+  color: var(--basic_white-30)
+}
+
+.button-social.disabled,
+.button-social:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_grey-asphalt-10);
+}
+
+/* CATALOG */
+
+/* Cards */
+
+.template-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--card_grey); 
+  text-align: center;
+}
+
+.heading-card {
+  font:inherit;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic_black)
+  
+} 
+
+.heading-card:hover,
+.heading-card:focus {
+  color: var(--basic_orange-dawn)
+}
+
+.heading-card:active {
+  color: var(--basic_black-30)
+}
+
+.heading-card.disabled,
+.heading-card:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic_white-30);
+}
+
+.heading-card + p {
+  color: var(--card_grey)
+}
+
+/* Пока еще не знаю как рисовать прямоугольники и временно поставил тень на карточку */
+.browser-frame {
+  background-color: var(--basic_grey-asphalt-12);
+}
+.browser-frame:hover {
+  background-color: var(--basic_grey-asphalt);
+}
+
+.box-shadow:hover {
+box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+}
+
+/* Filters */
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+  color: var(--basic_black);
+}
+
+.filter-radio,
+.filter-checkbox {
+  color: var(--basic_black);
+}
+
+.filter-radio:hover label,
+.filter-radio:focus label, 
+.filter-checkbox:hover label,
+.filter-checkbox:focus label {
+  color: var(--basic_black);
+
+}
+
+.filter-radio.disabled,
+.filter-radio:disabled,
+.filter-checkbox.disabled,
+.filter-checkbox:disabled {
+  cursor: default;
+  background-color: var(--basic_grey-asphalt-10);
+}
