@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -7,30 +7,34 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
+  <body class="page-body">
+    <header сlass="main-header">
     <nav class="main-navigation">
-      <a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+      <a class="main-header-logo">
         <img src="img/ic_logo_nerds.svg" width="160" height="65" alt="логотип дизайн-студии «Нёрдс»">
       </a>
-      <ul class="site-navigation">
-        <li> <a href="">студия</a> </li>
-        <li> <a href="">клиенты</a> </li>
-        <li> <a href="catalog.html">магазин</a> </li>
-        <li> <a href="">контакты</a> </li>   
-      </ul>
-      <div class="user-navigation">
-      <a href="">корзина</a> 
+          <ul class="site-navigation">
+            <li> <a href="">студия</a> </li>
+            <li> <a href="">клиенты</a> </li>
+            <li> <a href="catalog.html">магазин</a> </li>
+            <li> <a href="">контакты</a> </li>   
+          </ul>
+          <div class="user-navigation">
+          <a href="">корзина</a> 
+          </div>
+        </div>
       </div>
     </nav>
     </header>
-    <main> 
+    <main  class="container"> 
     <h1>Дизайн-студия Nerds</h1>
     <!-- Слайдер  --> 
-    <section>
+    <section class="features">
      <h2 class="visually-hidden">Услуги</h2>
       <ul class="services">
-        <li>
+        <li class="feature-item">
          <h3>Веб-сайты</h3>
           <p>
            <img src="img/img_web-sites.svg" width="300" height="146" alt="веб-сайты">
@@ -38,7 +42,7 @@
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
           <a class="button" href="">заказать</a>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Приложения</h3>
           <p>
            <img src="img/img_applications.svg" width="300" height="146" alt="приложения">
@@ -46,7 +50,7 @@
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button button-green" href="">заказать</a> 
         </li>
-        <li>
+        <li class="feature-item">
         <h3>Презентации</h3>
           <p>
            <img src="img/img_presentations.svg" width="300" height="146" alt="презентации">
@@ -56,16 +60,19 @@
         </li> 
       </ul>        
     </section>
-    <section>
+    <section class="index-columns">
       <h2 class="visually-hidden">О студии</h2>
-      <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.<p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>  
-      </ul>
+       <div class="about-studio">
+        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.<p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>  
+          </ul> 
+       </div>
+       <div class="about-studio-table">
       <p>с 2004 года Любим точность во всем:</p> 
         <table>
           <tr>
@@ -79,26 +86,27 @@
              <td>Минимальная предоплата</td>
           </tr>
           </table>
+        </div>
     </section>
     <section>
      <h2 class="visually-hidden">Партнёры</h2> 
-     <ul>
-      <li>
+     <ul class="partners">
+      <li class="htmlacademy">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
          <img src="img/ic_logo_htmlacademy.svg" width="199" height="68" alt="htmlacademy"> 
         </a>
       </li>
-      <li>
+      <li class="borodinsky">
         <a href="">
           <img src="img/ic_logo_borodinsky.svg" width="209" height="90" alt="borodinsky">  
         </a>
       </li>
-      <li>
+      <li class="pink">
         <a href="">
           <img src="img/ic_logo_pink.svg" width="185" height="52" alt="pink"> 
         </a>
       </li>
-      <li>
+      <li class="mishka">
         <a href="">
           <img src="img/ic_logo_mishka.svg" width="173" height="84" alt="mishka">
         </a>
@@ -107,11 +115,12 @@
     </section>
   </main>
   <footer class="main-footer">
+    <div class="container">
     <section>
       <h2 class="visually-hidden">Как нас найти</h2>
       <div></div>         
     </section>
-    <section>
+    <section  class="footer-contacts">
       <ul>
         <li>
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -121,7 +130,7 @@
         </li>
       </ul>   
     </section>          
-    <section>
+    <section class="popup">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -141,8 +150,6 @@
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <span>Давайте дружить, это выгодно!</span>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul class="footer-list">
         <li>
           <a class="button-social" href="">Вконтакте</a>
@@ -154,7 +161,13 @@
           <a class="button-social" href="">Инстаграм</a>
         </li>
       </ul>   
+      <div class="footer-ending">
+       <span>Давайте дружить, это выгодно!</span>
+       <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      
     </section>
+    </div>
 </footer>  
 </body>
 </html>
@@ -171,3 +184,4 @@
 
 
 <!-- здесь обитают котики -->
+<!-- стало еще больше котиков -->
