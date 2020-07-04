@@ -130,9 +130,10 @@
         </li>
       </ul>   
     </section>          
-    <section class="popup">
+    <section class="modal modal-write">
       <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-form-item">
         <p>
           <label for="appointment-name">Ваше имя:</label><br>
           <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
@@ -141,25 +142,35 @@
           <label for="email-email">Ваш email:</label><br>
           <input id="email-email" type="email" name="email" placeholder="email@example.com" autocomplete="on" required>
         </p>
+        </div>
         <p>
           <label for="comment-field">Текст письма:</label><br>
-          <textarea name="comment" id="comment-field" rows="118" cols="760" required>В свободной форме</textarea>
+          <textarea name="comment" id="comment-field" rows="10" cols="40" required>В свободной форме</textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button button-modal">Отправить</button>
       </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-list">
         <li>
-          <a class="button-social" href="">Вконтакте</a>
-          <img src="img/ic_vk.svg" width="26" height="15" alt="веб-сайты">
+          <a class="button-social" href="">
+           <span class="visually-hidden">Вконтакте</span> 
+           <img src="img/ic_vk.svg" width="26" height="15" alt="Вконтакте">
+          </a>
         </li>
         <li>
-          <a class="button-social" href="">Фейсбук</a>
+          <a class="button-social" href="">
+            <span class="visually-hidden">Фейсбук</span>
+            <img src="img/ic_fb.svg" width="12" height="22" alt="Фейсбук">
+          </a>
         </li>
         <li>
-          <a class="button-social" href="">Инстаграм</a>
+          <a class="button-social" href="">
+            <span class="visually-hidden">Инстаграм</span>
+            <img src="img/ic_instagram.svg" width="21" height="21" alt="Инстаграм">
+          </a>
         </li>
       </ul>   
       <div class="footer-ending">
