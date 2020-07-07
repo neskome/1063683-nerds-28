@@ -229,21 +229,26 @@ ul .padding-client {
 /* Slider */
 
 .fon {
+  --display: flex;
   background-color: var(--basic_grey);
   background-position: top center;
   padding: 0;
   margin: 0;
   height: 431px;
-  display: block;
+  --display: block;
 }
 
 .site-wrapper {
+  --display: flex;
   min-width: 1160px;
   min-height: 431px;
   background-repeat: no-repeat;
   background-position: top right;
   outline: 5px solid rgba(38, 221, 14, 0.918);
   outline-offset: -5px;
+  margin: 0;
+  padding:0;
+  
   
 }
 
@@ -280,6 +285,7 @@ ul .padding-client {
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
+  margin:0;
   
 }
 
@@ -967,10 +973,14 @@ body h1 {
   flex-direction: column;
   background-color: var(--basic_white);
   width: 319px;
+  margin: 0;
   padding-top: 49px;
   --padding-right: 50px;
   padding-bottom: 47px;
   --padding-left: 50px;
+  outline: 5px solid rgba(38, 0, 255, 0.3);
+  outline-offset: -5px;
+
   
 }
 
@@ -986,6 +996,9 @@ body h1 {
   text-align: left;
   text-transform: uppercase;
   color: var(--basic_black); 
+  outline: 5px solid rgba(38, 0, 255, 0.3);
+  outline-offset: -5px;
+  margin: 0;
 } 
 
 .window-contacts p,
@@ -1257,8 +1270,104 @@ align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  margin: 0px;
+  padding: 0px;
 }
+
+.templates-sorting h2 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  color: var(--basic_black);
+  margin-bottom: 48px;
+  margin-right: 266px;
+  align-items: center;
+  
+}
+
+.templates-sorting-types a {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  color: var(--basic_black);
+  --margin-bottom: 48px;
+  margin-right: 25px;
+}
+
+
+--.down-up-dir {
+  --display: absolute;
+}
+
+.down-dir {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+ 
+.down-dir::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  height: 10px;
+  width: 11px;
+  background-image: url("/GIT/1063683-nerds-28/img/ic_down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  opacity: 0.2;
+  
+}
+
+.down-dir:hover::before,
+.down-dir:focus::before {
+opacity: 0.4;
+}
+
+.down-dir:active::before {
+opacity: 1;
+}
+
+
+.up-dir {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+ 
+.up-dir::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  height: 10px;
+  width: 11px;
+  background-image: url("/GIT/1063683-nerds-28/img/ic_up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.up-dir:hover::before,
+.up-dir:focus::before {
+opacity: 0.4;
+}
+
+.up-dir:active::before {
+opacity: 1;
+}
+
+
+
+
 
 
 
