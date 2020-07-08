@@ -192,7 +192,7 @@ img {
   display: flex;
   --justify-content: space-between;
   --align-content: space-between;
-  padding: 76px 44px 0 0;
+  padding: 76px 45px 0 0;
  --outline: 5px solid rgba(140, 0, 255, 0.3);
   --outline-offset: -5px;
 }
@@ -219,7 +219,7 @@ ul .padding-client {
   content: "";
   position: absolute;
   --right: 45px;
-  bottom: 80px;
+  bottom: -5px;
   width: 74px;
  --left: 0px;
   height: 2px;
@@ -253,15 +253,15 @@ ul .padding-client {
 }
 
 .site-wrapper-1 {
-  background-image: url("/GIT/1063683-nerds-28/img/img_slider1.png");
+  background-image: url("../img/img_slider1.png");
 }
 
 .site-wrapper-2 {
-  background-image: url("/GIT/1063683-nerds-28/img/img_slider2.png");
+  background-image: url("../img/img_slider2.png");
 }
 
 .site-wrapper-3 {
-  background-image: url("/GIT/1063683-nerds-28/img/img_slider3.png");
+  background-image: url("../img/img_slider3.png");
 }
 
 .slider {
@@ -562,7 +562,7 @@ ul .padding-client {
   padding: 0;
   width: 360px;
   text-align: center;
-  background-image: url("/GIT/1063683-nerds-28/img/img_logo_nerds.png");
+  background-image: url("../img/img_logo_nerds.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   
@@ -911,7 +911,7 @@ body h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 22px 0 0 4px;
   list-style: none;
 }
 
@@ -995,6 +995,7 @@ body h1 {
 
 .map-wrapper iframe {
   border: none;
+  width: 100%;
 }
 
 
@@ -1177,7 +1178,7 @@ margin-bottom: 38px;
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url("/GIT/1063683-nerds-28/img/ic_close-cross.svg");
+  background-image: url("../img/ic_close-cross.svg");
   border: none;
   cursor: pointer;
   opacity: 0.3;
@@ -1314,6 +1315,8 @@ margin-bottom: 38px;
   align-content: start;
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
+  margin-top: 54px;
+  margin-bottom: 60px;
 }
 
 /* Big title */
@@ -1329,7 +1332,7 @@ margin-bottom: 38px;
   line-height: 55px;
   font-weight: 500;
   padding: 0px 18px 0 0;
-  margin: 77px 0px 161px 0;
+  margin: 77px 0px 108px 0;
 }
 /* Cards-sorting */
 
@@ -1362,8 +1365,9 @@ margin-bottom: 38px;
   margin: 0px;
   padding: 0px;
   color: var(--basic_black);
+  margin-left: 1px;
   margin-bottom: 48px;
-  margin-right: 278px;
+  margin-right: 268px;
   align-items: center;
   
 }
@@ -1377,7 +1381,7 @@ margin-bottom: 38px;
   padding: 0px;
   color: var(--basic_black-30);
   --margin-bottom: 48px;
-  margin-right: 20px;
+  margin-right: 25px;
 
 }
 
@@ -1404,10 +1408,10 @@ margin-bottom: 38px;
   content: "";
   position: absolute;
   top: -10px;
-  left: 17px;
+  left: 23px;
   height: 10px;
   width: 11px;
-  background-image: url("/GIT/1063683-nerds-28/img/ic_down-dir.svg");
+  background-image: url("../img/ic_down-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
@@ -1435,10 +1439,10 @@ opacity: 1;
   content: "";
   position: absolute;
   top: -10px;
-  left: 35px;
+  left: 52px;
   height: 10px;
   width: 11px;
-  background-image: url("/GIT/1063683-nerds-28/img/ic_up-dir.svg");
+  background-image: url("../img/ic_up-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
@@ -1459,7 +1463,7 @@ opacity: 1;
 /* Cards */
 
 .template-list {
-  margin-left: 136px;
+  margin-left: 140px;
   --outline-offset: -5px;
   --outline: 5px solid rgba(76, 0, 255, 0.7);
   font-size: 16px;
@@ -1483,8 +1487,20 @@ opacity: 1;
 .templates-item {
   width: 360px;
   height: 620px;
-  margin-right: 42px;
+  margin-right: 40px;
   margin-bottom: 31px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 360px;
+  background-image: url("../img/ic_browser_light.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+  padding: 0px;
+  min-height: 620px;
+  border-radius: 0px 0px 5px 5px ;
 }
 
 .templates-item:nth-child(2n) {
@@ -1499,35 +1515,26 @@ opacity: 1;
 /* Card grey */
 
 .background-browser {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  height: 40px;
-  width: 360px;
-  background-image: url("../img/ic_browser_light.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1;
-  padding: 0px;
-  min-height: 620px;
-  border-radius: 0px 0px 5px 5px ;
  
 }
  
-.background-browser:hover {
-  background-image: url("/GIT/1063683-nerds-28/img/ic_browser.svg");
+.templates-item:hover {
+  background-image: url("../img/ic_browser.svg");
 }
 
 .popup-cards {
   position: relative;
   top: -248px;
   left: 0px;
-  height: 231px;
   width: 360px;
+  --overflow-y: auto;
+  min-height: 231px;
+  --max-height: 576px;
   background-color: var(--basic_grey);
   border-radius: 0px 0px 5px 5px ;
   padding: 0px;
-  opacity: 1;
+  --display: none;
+  --opacity: 1;
 }
 
 .templates-item:hover {
@@ -1539,27 +1546,33 @@ opacity: 1;
 }
 
 .templates-item:hover .popup-cards {
+  display: block;
   opacity: 1;
   width: 360px;
 }
 
 .popup-cards h3 {
   padding-top: 26px;
-  padding-bottom: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 12px;
 
 }
 
 .popup-cards .templates-info {
-  margin: 0;
-  padding: 0;
+  display: block;
+  margin: 0 0 2px 0;
+  padding: 0 66px;
 }
 
 .button-position {
-  margin-top: 30px;
+  outline-offset: -5px;
+  outline: 5px solid rgba(76, 0, 255, 0.7);
+  margin: 30px 80px 45px 80px;
   padding:  17px 72px 15px 72px;
 }
 
 .templates-img img{
+  object-fit: contain;
   width: 358px;
   height: 578px;
   margin-top: 24px;
@@ -1633,11 +1646,17 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 .filter-radiobutton {
   padding: 0;
   margin: 0;
-  margin-bottom: 51px;
+  margin-bottom: 40px;
   border: none;
   justify-content: flex-end;
  --display: block;
 }
+
+.filter-radiobutton ul {
+  padding: 0;
+  margin: 0 0 0 36px;
+}
+
 
 .filter-radiobutton li,
 .filter-features li{
@@ -1650,13 +1669,14 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   display: block;
   cursor: pointer;
   user-select: none;
+  margin: 11px 0 0 0;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -40px;
+  top: 3px;
+  left: -36px;
   background-image: url("../img/ic_checkbox-off.svg");
   width: 23px;
   height: 23px;
@@ -1669,8 +1689,8 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -40px;
+  top: 3px;
+  left: -36px;
   width: 26px;
   height: 23px;
   background-color: var(--basic_white);
@@ -1695,8 +1715,8 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 0px;
+  top: 2px;
+  left: -36px;
   width: 25px;
   height: 25px;
   --background-color: var(--basic_white);
@@ -1709,8 +1729,8 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -40px;
+  top: 2px;
+  left: -36px;
   width: 25px;
   height: 25px;
   --background-color: var(--basic_white);
@@ -1730,10 +1750,16 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .filter-features {
-  margin-top: 29px;
   padding: 0;
   margin: 0;
-  margin-bottom: 48px;
+  margin-top: 0px;
+  margin-bottom: 46px;
+  border: none;
+}
+
+.filter-features ul{
+  padding: 0;
+  margin: 13px 0 0 36px;
   border: none;
 }
 
@@ -1741,7 +1767,7 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom:29px;
+  margin-bottom:0px;
 
 }
 
@@ -1778,7 +1804,7 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
 }
 
 .range-filter {
@@ -1851,8 +1877,8 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 
 .price-controls input {
   width: 60px;
-  padding: 10px;
-  margin-left: 11px;
+  padding: 10px 10px;
+  margin-left: 8px;
   text-align: center;
   color: #283136;
   border: none;
