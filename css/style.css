@@ -101,11 +101,6 @@ img {
 
 /* Main header */
 
-.main_header {
-  margin: 0;
-  padding:0; 
-}
-
 /* Main navigation */
 
 .main-navigation {
@@ -283,6 +278,7 @@ ul .padding-client {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .slider-controls .current {
@@ -665,6 +661,7 @@ tr .table-text-item {
   text-transform: uppercase;
   background-color: var(--basic_orange-dawn);
   color: var(--basic_white);
+  vertical-align: top;
 } 
 
 .button:hover,
@@ -908,14 +905,15 @@ body h1 {
 display: inline-block;
 align-items: center;
 margin-left: 50px;
-margin-bottom: 38px;
-
+margin-bottom: 40px;
+vertical-align: top;
 }
 
 .button-window {
   display: inline-block;
   padding: 17px 44px 15px 44px;
   margin-left: 50px;
+  vertical-align: top;
 }
 
 
