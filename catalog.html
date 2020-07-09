@@ -192,7 +192,7 @@
         <li class="page-button-item button-active">
           <a href="">1</a>
         </li>
-        <li class="page-button-item">
+        <li class="page-button-item button-second">
           <a href="">2</a>
         </li>
         <li class="page-button-item">
@@ -220,34 +220,13 @@
         </section>          
         </div>   
       <div class="container">
-      <section class="modal modal-write">
-        <h2>Напишите нам</h2>
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="write-form-item">
-          <p>
-            <label for="appointment-name">Ваше имя:</label><br>
-            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
-          </p>
-          <p>
-            <label for="email-email">Ваш email:</label><br>
-            <input id="email-email" type="email" name="email" placeholder="email@example.com" autocomplete="on" required>
-          </p>
-          </div>
-          <p class="write-comment">
-            <label for="comment-field">Текст письма:</label><br>
-            <textarea name="comment" id="comment-field" rows="4" cols="40" required>В свободной форме</textarea>
-          </p>
-          <button type="submit" class="button button-modal">Отправить</button>
-        </form>
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-list">
-          <li>
-            <a class="button-social" href="">
-             <span class="visually-hidden">Вконтакте</span> 
-             <img src="img/ic_vk.svg" width="26" height="15" alt="Вконтакте">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-list">
+            <li>
+              <a class="button-social" href="">
+                <span class="visually-hidden">Вконтакте</span> 
+                <img src="img/ic_vk.svg" width="26" height="15" alt="Вконтакте">
             </a>
           </li>
           <li>
@@ -266,23 +245,39 @@
         <div class="footer-ending">
          <span>Давайте дружить, это выгодно!</span>
          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        
+        </div> 
       </section>
-      </div>
+    </div>
   </footer>  
-  </body>
+</body>
   </html>
+  <section class="modal modal-write">
+    <h2>Напишите нам</h2>
+    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="write-form-item">
+      <p class="">
+        <label for="appointment-name">Ваше имя:</label><br>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,25}\s[A-Za-zА-Яа-яЁё]{1,25}" value="" autocomplete="on">
+      </p>
+      <p class="">
+        <label for="email-email">Ваш email:</label><br>
+        <input id="email-email" type="email" name="email" placeholder="email@example.com" value="" autocomplete="on" >
+      </p>
+      </div>
+      <p class="write-comment">
+        <label for="comment-field">Текст письма:</label><br>
+        <textarea name="comment" id="comment-field" rows="4" cols="40" placeholder="В свободной форме" pattern="^[А-Яа-яЁё\s]+$"></textarea>
+      </p>
+      <button type="submit" class="button button-modal">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
   
   
   
   
   
   
-  
-  
-  
-  
 
 
 
@@ -292,6 +287,3 @@
 
 
 
-
-
-<!-- здесь обитают котики -->

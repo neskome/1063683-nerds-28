@@ -95,7 +95,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content min-content min-content;
   align-content: start;
 }
 
@@ -1262,8 +1262,6 @@ margin-bottom: 38px;
   background-position: 0 0;
   cursor: pointer;
   opacity: 0.2;
-  
-
 }
 
 .up-dir:hover::before,
@@ -1279,8 +1277,6 @@ opacity: 1;
 
 .template-list {
   margin-left: 140px;
-  --outline-offset: -5px;
-  --outline: 5px solid rgba(76, 0, 255, 0.7);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1300,8 +1296,6 @@ opacity: 1;
 }
 
 .templates-cards .templates-item  {
-  --outline-offset: -5px;
-  --outline: 5px solid rgba(76, 0, 255, 0.7);
   position: relative;
   width: 360px;
   height: 620px;
@@ -1315,8 +1309,6 @@ opacity: 1;
 
 .templates-cards .templates-item::before {
   content: "";
-  --outline-offset: -5px;
-  --outline: 5px solid rgba(76, 0, 255, 0.7);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1332,7 +1324,6 @@ opacity: 1;
 
 .templates-cards .templates-item:hover::before {
   opacity: 1;
-  --background-image: url("../img/ic_browser.svg");
 }
 
 .templates-item:hover {
@@ -1361,8 +1352,7 @@ opacity: 1;
   background-color: var(--basic_grey);
   border-radius: 0px 0px 5px 5px ;
   padding: 0px 0 0px 0;
-  display: none;
-  
+  display: none; 
 }
 
 .templates-item:hover .popup-cards {
@@ -1371,15 +1361,14 @@ opacity: 1;
 }
 
 .templates-img {
-padding: 0;
-margin: 0;
+ padding: 0;
+ margin: 0;
 }
 
 .popup-cards h3 {
   padding-top: 26px;
   padding-bottom: 0px;
   margin-bottom: 12px;
-
 }
 
 .popup-cards .templates-info {
@@ -1389,8 +1378,6 @@ margin: 0;
 }
 
 .button-position {
-  --outline-offset: -5px;
-  --outline: 5px solid rgba(76, 0, 255, 0.7);
   margin: 30px 80px 45px 80px;
   padding:  17px 72px 15px 72px;
 }
@@ -1403,7 +1390,6 @@ margin: 0;
   border: 1px solid var(--basic_grey-asphalt-12);
   padding: 0;
   border-radius: 0px 0px 5px 5px ;
-
 }
 
 .templates-item:hover img {
@@ -1420,8 +1406,7 @@ margin: 0;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: var(--basic_black)
-  
+  color: var(--basic_black) 
 } 
 
 .heading-card:hover,
@@ -1444,29 +1429,7 @@ margin: 0;
   color: var(--card_grey)
 }
 
-/* Пока еще не знаю как рисовать прямоугольники и временно поставил тень на карточку */
-.browser-frame {
-  background-color: var(--basic_grey-asphalt-12);
-}
-.browser-frame:hover {
-  background-color: var(--basic_grey-asphalt);
-}
-
-.box-shadow:hover {
-box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-}
-
 /* Filters */
-
-.filter {
-  --outline-offset: -5px;
-  --outline: 5px solid rgba(0, 255, 0, 0.7);
-  
-}
-
-.filter-all ul {
- 
-}
 
 .filter-radiobutton {
   padding: 0;
@@ -1474,14 +1437,12 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   margin-bottom: 40px;
   border: none;
   justify-content: flex-end;
- --display: block;
 }
 
 .filter-radiobutton ul {
   padding: 0;
   margin: 0 0 0 36px;
 }
-
 
 .filter-radiobutton li,
 .filter-features li{
@@ -1505,10 +1466,7 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   background-image: url("../img/ic_checkbox-off_light.svg");
   width: 23px;
   height: 23px;
- 
-  
 }
-
 
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -1521,8 +1479,6 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   background-image: url("../img/ic_checkbox-on_light.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  --z-index:2;
-  --opacity: 0.4;
 }
 
 .filter-input-checkbox + label:hover::before {
@@ -1546,11 +1502,7 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   left: -36px;
   width: 25px;
   height: 25px;
-  --background-color: var(--basic_white);
   background-image: url("../img/ic_radio-off_light.svg");
-  --border: 2px solid #000000;
-  --border-radius: 50%;
-  --opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1562,8 +1514,6 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   height: 25px;
   background-color: var(--basic_white);
   background-image: url("../img/ic_radio-on_light.svg");
-  --opacity: 0.4;
-  --z-index: 200;
 }
 
 .filter-input-radio + label:hover::before {
@@ -1599,7 +1549,6 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom:0px;
-
 }
 
 .filter ul {
@@ -1618,7 +1567,6 @@ box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 .filter-checkbox:hover label,
 .filter-checkbox:focus label {
   color: var(--basic_black);
-
 }
 
 .filter-radio.disabled,
