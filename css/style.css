@@ -101,7 +101,7 @@ img {
 
 /* Main header */
 
-.main-header {
+.main_header {
   margin: 0;
   padding:0;
   --outline: 5px solid rgba(0, 255, 0, 0.3);
@@ -339,44 +339,6 @@ ul .padding-client {
   display: block;
 }
 
-/*.slider-controls button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  width: 18px;
-  height: 18px;
-  background-color: var(--basic_white);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.slide {
-  display: none;
-}
-
-.slide-current {
-  display: block;
-}
-
-.slider-controls button::before {
-  content: "";
-  top: 4px;
-  left: 4px;
-  position: absolute;
-  padding: 0;
-  width: 6px;
-  height: 6px;
-  --background-color: var(--basic_white);
-  border: 2px solid var(--logo_grey);
-  border-radius: 50%;
-  --bottom: 5px;
-  z-index: 2;
-  
-}*/
 
 /* Icon Cart */
 
@@ -911,25 +873,27 @@ body h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 22px 0 0 4px;
+  margin: 22px 0 0 0px;
   list-style: none;
 }
 
 .page-button-item a {
   display: block;
   padding: 17px 20px 15px 20px;
-  margin-right: 11px;
+  margin-right: 12px;
   color: var(--basic-black);
   background-color: var(--basic_grey);
   border-radius: 3px;
   font-weight: 500;
   text-transform: uppercase;
+  
 
 }
 
 .button-next  a {
   padding: 17px 77px 15px 78px;
 }
+
 
 .page-button-item a:hover,
 .page-button-item a:focus {
@@ -943,10 +907,18 @@ body h1 {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
---button-first a:visited {
-  background-color: transparent;
+--.page-button-item a:visited {
+  background-color: var(--basic_white);
+  color: var(--basic_black);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+
+.button-first a {
+  background-color: var(--basic_white);
   color: var(--basic_black);
   border: 3px solid var(--button_active-item_grey);
+  padding: 14px 17px 12px 17px;
 }
 
 .page-button-item a.disabled,
@@ -1001,7 +973,7 @@ body h1 {
 
 .footer-contacts {
   list-style: none;
-  position: absolute
+  position: absolute;
 }
 
 .window-contacts {
@@ -1149,6 +1121,15 @@ margin-bottom: 38px;
   color: var(--txt-border_focus_grey);
   border: 2px solid var(--basic_black);
 }
+
+.write-form input[type="email"]:invalid,
+.write-form input[type="text"]:invalid,
+.write-form textarea:invalid {
+  color: var(--basic_carmine-pink);
+  border: 2px solid var(--basic_carmine-pink);
+}
+
+
 
 .write-form-item {
   display: flex;
@@ -1540,12 +1521,12 @@ opacity: 1;
   top: 374px;
   left: 0px;
   width: 360px;
-  --overflow-y: auto;
+  overflow-y: auto;
   min-height: 231px;
-  --max-height: 576px;
+  max-height: 576px;
   background-color: var(--basic_grey);
   border-radius: 0px 0px 5px 5px ;
-  padding: 0px;
+  padding: 0px 0 0px 0;
   display: none;
   
 }
