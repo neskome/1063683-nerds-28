@@ -104,13 +104,13 @@
       <h2 class="visually-hidden">Список шаблонов</h2>
       <div class="templates-sorting">
         <h2>Сортировать:</h2>
-        <ul class="templates-sorting-types">
-          <li><a class="" href="#">по цене</a></li>
+        <ul class="templates-sorting-types ">
+          <li><a class="sorting-types-active" href="#">по цене</a></li>
           <li><a class="" href="#">по типу</a></li>
           <li><a class="" href="#">по названию</a></li>
         </ul>
         <p class="down-up-dir">
-          <a class="down-dir" href="#" aria-label="по убыванию"></a>
+          <a class="down-dir down-dir-active" href="#" aria-label="по убыванию"></a>
           <a class="up-dir" href="#" aria-label="по возрастанию"></a>
         </p>
       </div>
@@ -209,14 +209,12 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1160" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>        
         <section class="container footer-contacts">
-          <ul class="">
-            <li class="window-contacts">
+            <div class="window-contacts">
               <h3 class="window-title">NЁRDS DESIGN STUDIO</h3>
               <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 </p>
-              <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a><br>
-              <a href="" class="button button-window">напишите нам</a>
-            </li>
-          </ul> 
+              <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+              <a href="write.html" class="button button-window">напишите нам</a>
+            </div> 
         </section>          
       </div>   
         <section class="modal modal-write">
@@ -224,16 +222,16 @@
           <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="write-form-item">
             <p class="">
-              <label for="appointment-name">Ваше имя:</label><br>
-              <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,25}\s[A-Za-zА-Яа-яЁё]{1,25}" value="" autocomplete="on">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,25}" value="" autocomplete="on" required>
             </p>
             <p class="">
-              <label for="email-email">Ваш email:</label><br>
-              <input id="email-email" type="email" name="email" placeholder="email@example.com" value="" autocomplete="on" >
+              <label for="email-email">Ваш email:</label>
+              <input id="email-email" type="email" name="email" placeholder="email@example.com" value="" autocomplete="on" required>
             </p>
             </div>
             <p class="write-comment">
-              <label for="comment-field">Текст письма:</label><br>
+              <label for="comment-field">Текст письма:</label>
               <textarea name="comment" id="comment-field" rows="4" cols="40" placeholder="В свободной форме"></textarea>
             </p>
             <button type="submit" class="button button-modal">Отправить</button>
@@ -269,11 +267,10 @@
         </div> 
       </section>
     </div>
-  </footer>  
+  </footer>
+  <script src="js/modal.js"></script>
   </body>
   </html>
-  
-
 
 
 

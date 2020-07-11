@@ -848,6 +848,10 @@ color: var(--basic_white);
   color: var(--basic_black);
 }
 
+.page-button-item a:focus {
+  outline:none;
+}
+
 .page-button-item a:active {  
   background-color: var(--button_click_grey);
   color: var(--basic_black);
@@ -902,7 +906,7 @@ color: var(--basic_white);
 .window-contacts {
   position: absolute;
   bottom: -346px;
-  left: 10px;
+  left: 20px;
   flex-direction: column;
   background-color: var(--basic_white);
   width: 319px;
@@ -957,7 +961,7 @@ color: var(--basic_white);
 .button-window {
   display: inline-block;
   padding: 17px 44px 15px 44px;
-  margin: 40px 50px 43px 50px;
+  margin: 34px 50px 47px 50px;
   vertical-align: top;
 }
 
@@ -978,6 +982,14 @@ color: var(--basic_white);
   line-height: 18px;
   font-weight: 700;
   z-index: 200; 
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /* Modal write */
@@ -1089,6 +1101,48 @@ color: var(--basic_white);
   opacity: 0.1; 
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .footer-social {
   margin-top: 70px;
   padding:0;
@@ -1124,7 +1178,7 @@ color: var(--basic_white);
 .footer-ending {
   margin: 0;
   margin-top: 5px;
-  width: 544px;
+  width: 566px;
   text-align: left; 
   
 }
@@ -1220,6 +1274,8 @@ color: var(--basic_white);
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
+  width: 270px;
+  justify-content: space-between;
 }
 
 .templates-sorting h2 {
@@ -1244,8 +1300,6 @@ color: var(--basic_white);
   margin: 0px;
   padding: 0px;
   color: var(--basic_black-30);
-  margin-right: 25px;
-
 }
 
 .templates-sorting-types a:hover {
@@ -1260,6 +1314,10 @@ color: var(--basic_black-60);
   color: var(--basic_black);
 }
 
+li .sorting-types-active {
+  color: var(--basic_black);
+}
+
 .down-dir {
   position: relative;
   margin: 0;
@@ -1269,8 +1327,9 @@ color: var(--basic_black-60);
 .down-dir::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 23px;
+  top: 0px;
+  bottom: 0;
+  left: 46px;
   height: 10px;
   width: 11px;
   background-image: url("../img/ic_down_dir.svg");
@@ -1278,7 +1337,6 @@ color: var(--basic_black-60);
   background-position: 0 0;
   cursor: pointer;
   opacity: 0.2;
-
 }
 
 .down-dir:hover::before,
@@ -1287,6 +1345,10 @@ color: var(--basic_black-60);
 }
 
 .down-dir:active::before {
+  opacity: 1;
+}
+
+.down-dir-active::before {
   opacity: 1;
 }
 
