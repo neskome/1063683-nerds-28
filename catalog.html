@@ -42,15 +42,15 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
+              <div class="toggle toggle-min" tabindex="0" aria-label="тумблер начальной стоимости"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="тумблер конечной стоимости"></div>
             </div>
             <div class="price-controls">
               <label class="min-price">
-                от <input type="text" name="min-price" value="0">
+                от <input type="number" name="min-price" min="0" max="" value="0">
               </label>
               <label class="max-price">
-                до <input type="text" name="max-price" value="15000">
+                до <input type="number" name="max-price" min="1" max="" value="15000">
               </label>
             </div>
           </div>
@@ -59,15 +59,15 @@
           <legend>Сетка:</legend>
           <ul>
             <li class="filter-radio">
-              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-adaptive" value="adaptive" checked disabled>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="filter-radio">
-              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-fixed" value="fixed">
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-fixed" value="fixed" disabled>
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-radio">
-              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-rubber" value="rubber">
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-rubber" value="rubber" disabled>
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -80,7 +80,7 @@
               <label for="filter-slider">Слайдер</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="benefits-block" id="filter-benefits-block" >
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="benefits-block" id="filter-benefits-block" disabled >
               <label for="filter-benefits-block">Блок преимуществ</label>
             </li>
             <li class="filter-checkbox">
@@ -110,8 +110,8 @@
           <li><a class="" href="#">по названию</a></li>
         </ul>
         <p class="down-up-dir">
-          <a class="down-dir" href="#" aria-label="Ниже"></a>
-          <a class="up-dir" href="#" aria-label="Выше"></a>
+          <a class="down-dir" href="#" aria-label="по убыванию"></a>
+          <a class="up-dir" href="#" aria-label="по возрастанию"></a>
         </p>
       </div>
       <ul class="templates-cards">
@@ -190,16 +190,16 @@
       </ul>
       <ul class="page-button-list">
         <li class="page-button-item button-active">
-          <a href="">1</a>
+          <a href="" aria-label="первая страница">1</a>
         </li>
         <li class="page-button-item button-second">
-          <a href="">2</a>
+          <a href="" aria-label="первая страница">2</a>
         </li>
         <li class="page-button-item">
-          <a href="">3</a>
+          <a href="" aria-label="первая страница">3</a>
         </li>
         <li class="page-button-item button-next">
-          <a href="">следующая</a>
+          <a href="" aria-label="следующая страница">следующая</a>
         </li>
       </ul>
       </section>
