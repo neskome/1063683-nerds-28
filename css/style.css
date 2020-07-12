@@ -904,10 +904,11 @@ color: var(--basic_white);
 }
 
 .window-contacts {
-  position: absolute;
-  bottom: -346px;
-  left: 20px;
+  display: flex;
   flex-direction: column;
+  position: absolute;
+  bottom: -362px;
+  left: 20px;
   background-color: var(--basic_white);
   width: 319px;
   flex-basis: 319px;
@@ -954,6 +955,7 @@ color: var(--basic_white);
   display: inline-block;
   align-items: center;
   margin-left: 50px;
+  margin-right: 50px;
   margin-bottom: 0;
   vertical-align: top;
 }
@@ -961,7 +963,7 @@ color: var(--basic_white);
 .button-window {
   display: inline-block;
   padding: 17px 44px 15px 44px;
-  margin: 34px 50px 47px 50px;
+  margin: 40px 50px 47px 50px;
   vertical-align: top;
 }
 
@@ -1187,7 +1189,7 @@ color: var(--basic_white);
   margin-top: 8px;
   padding-top: 0px;
   padding-bottom: 74px;
-  color: var(--txt_grey); 
+  color: var(--txt-border_focus_grey); 
 }
 
 .footer-ending span {
@@ -1276,6 +1278,7 @@ color: var(--basic_white);
   padding: 0px;
   width: 270px;
   justify-content: space-between;
+  padding: 0 25px 0 0;
 }
 
 .templates-sorting h2 {
@@ -1294,7 +1297,7 @@ color: var(--basic_white);
 
 .templates-sorting-types a {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0px;
@@ -1321,13 +1324,13 @@ li .sorting-types-active {
 .down-dir {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0px 25px 0px 0px;
 }
  
 .down-dir::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 4px;
   bottom: 0;
   left: 46px;
   height: 10px;
@@ -1355,14 +1358,14 @@ li .sorting-types-active {
 .up-dir {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 20px;
 }
  
 .up-dir::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 52px;
+  top: 4px;
+  left: 0px;
   height: 10px;
   width: 11px;
   background-image: url("../img/ic_up_dir.svg");
@@ -1370,6 +1373,7 @@ li .sorting-types-active {
   background-position: 0 0;
   cursor: pointer;
   opacity: 0.2;
+  
 }
 
 .up-dir:hover::before,

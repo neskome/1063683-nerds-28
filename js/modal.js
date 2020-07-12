@@ -17,7 +17,7 @@ try {
 writeLink.addEventListener("click", function () {
     evt.preventDefault();
     writePopup.classList.add("modal-show");
-    writeName.focus();
+    
 });
 
 if (storage) {
