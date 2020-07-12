@@ -894,9 +894,29 @@ color: var(--basic_white);
   padding: 0;
 }
 
+.map-wrapper img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 1440px;
+  height: 416px;
+  margin: 0;
+}
+
+
+.hhh {
+ position: relative;
+
+}
+
 .map-wrapper iframe {
+  --position: relative;
   border: none;
   width: 100%;
+  z-index: 2;
+
 }
 
 .footer-contacts {
@@ -916,6 +936,7 @@ color: var(--basic_white);
   min-height: 308px;
   margin: 0;
   list-style: none; 
+  z-index: 3;
 }
 
 .window-title {
@@ -989,6 +1010,7 @@ color: var(--basic_white);
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-error {
