@@ -1015,10 +1015,8 @@ color: var(--basic_white);
 /* Modal write */
 
 .modal-write {
-  --position: absolute;
-  top: 553px;
+  top: 130px;
   bottom: auto;
-  --min-height: 590px;
   width: 760px;
   padding: 43px 100px 84px ;
 }
