@@ -98,11 +98,9 @@ img {
 
 .page {
   height: 100%;
-  --width: 100%;
 }
 
 .page-body {
-  --width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content min-content min-content;
@@ -140,7 +138,7 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .main-header-logo {
