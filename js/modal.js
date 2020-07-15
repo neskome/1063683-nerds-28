@@ -13,10 +13,10 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
- writeLink.addEventListener("click", function (evt) {
+writeLink.addEventListener("click", function (evt) {
   evt.preventDefault();
- writePopup.classList.add("modal-show");
-  
+  writePopup.classList.add("modal-show");
+
   if (storage) {
     writeName.value = storage;
     writeEmail.focus();
@@ -27,16 +27,16 @@ try {
 
 writeClose.addEventListener("click", function (evt) {
   evt.preventDefault();
- writePopup.classList.remove("modal-show");
- writePopup.classList.remove("modal-error");
+  writePopup.classList.remove("modal-show");
+  writePopup.classList.remove("modal-error");
 });
 
 writeForm.addEventListener("submit", function (evt) {
   if (!writeName.value || !writeEmail.value) {
     evt.preventDefault();
- writePopup.classList.remove("modal-error");
- writePopup.offsetWidth = writePopup.offsetWidth;
- writePopup.classList.add("modal-error");
+    writePopup.classList.remove("modal-error");
+    writePopup.offsetWidth = writePopup.offsetWidth;
+    writePopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", writeName.value);
